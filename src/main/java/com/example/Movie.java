@@ -19,4 +19,17 @@ public class Movie {
     public void setTitle(String title) {
         this.title = title;
     }
+
+    public Movie(Long id, String title) {
+        this.id = id;
+        this.title = title;
+    }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                '}';
+    }
 }
